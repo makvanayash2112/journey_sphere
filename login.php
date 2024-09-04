@@ -44,7 +44,7 @@ if (isset($_POST["login"])) {
     $_SESSION["ad_session"] = $res[1];
     $_SESSION["usersession"] = 1;
 
-    echo "<script>window.location=' http://localhost/journeysphere/client/index.php';</script>";
+    echo "<script>window.location='Client/index.php';</script>";
     // header("Location: http://localhost/journeysphere/client/index.php");
 
   } else {
@@ -52,6 +52,7 @@ if (isset($_POST["login"])) {
   }
 }
 ?>
+
 
 
 
@@ -81,7 +82,7 @@ if (isset($_POST["login"])) {
       </div>
       <div class="form-inner">
         <!-- login form -->
-        <form action="#" class="login" method="post" enctype="multipart/form-data">
+        <form  class="login" method="post" enctype="multipart/form-data">
           <div class="field">
             <input type="text" placeholder="Email Address / Mobile Number" name="email" required>
           </div>
@@ -94,12 +95,12 @@ if (isset($_POST["login"])) {
           </div>
           <div class="field btn">
             <div class="btn-layer"></div>
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" name="login">
           </div>
           <div class="signup-link">Not a member? <a href="">Signup now</a></div>
         </form>
         <!-- singup form -->
-        <form action="#" class="signup" method="post" enctype="multipart/form-data">
+        <form class="signup" method="post" enctype="multipart/form-data">
         <div class="field">
             <input type="text" placeholder="User Name" name="name" required>
           </div>
